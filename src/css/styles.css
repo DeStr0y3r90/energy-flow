@@ -1,0 +1,90 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* Normalizations for the latest Chrome, Firefox, and Safari */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+/* */
+
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./home-quote.css');
+@import url('./loader.css');
+@import url('./exercises.css');
+@import url('./motivation.css');
+@import url('./footer.css');
+@import url('./scroll-up.css');
+@import url('./favorites-quote.css');
+@import url('./favorites-section.css');
+@import url('./menu.css');
+@import url('./modal.css');
+@import url('./modal-rating.css');
+
+:root {
+  color: #1b1b1b;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* FONTS */
+/* @font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap');
+} */
+/*  */
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: local('DM Sans'), url('../fonts/DMSans-Regular.ttf') format('truetype'),
+    url('./fonts/DMSans-Italic.ttf') format('truetype'),
+    url('./fonts/DMSans-Bold.ttf') format('truetype'),
+    url('./fonts/DMSans-Medium.ttf') format('truetype'),
+    url('./fonts/DMSans-Regular.woff') format('woff'),
+    url('./fonts/DMSans-Italic.woff') format('woff'),
+    url('./fonts/DMSans-Bold.woff') format('woff'),
+    url('./fonts/DMSans-Medium.woff') format('woff'),
+    url('./fonts/DMSans-Regular.woff2') format('woff2'),
+    url('./fonts/DMSans-Italic.woff2') format('woff2'),
+    url('./fonts/DMSans-Bold.woff2') format('woff2'),
+    url('./fonts/DMSans-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MOBILE */
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
